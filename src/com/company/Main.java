@@ -97,6 +97,7 @@ public class Main {
             }while(productCountForEachCustomer<2);
 
         }while(CustomerCount<customersTotalNumber);
+        //forloop 
 
         for(int i =0;i<=customerBook.customerList.size()-1;i++){
             System.out.println(customerBook.customerCount+".Customer in the customerList : "+customerBook.customerList.get(i).getCustomerName());
