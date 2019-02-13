@@ -12,19 +12,36 @@ public class Main {
         Read_SaveFile readFile=new Read_SaveFile();
         readFile.readFile();
 
-
+        System.out.println("How many custemer you want to enter ");
         int customersTotalNumber=sc.nextInt();
         sc.nextLine();
         int CustomerCount=0;
+        String customerName;
+
+
+
 
 
         do{
             int productCountForEachCustomer=0;
             double totalPriceForEachCustomer=0;
             Customer customer= new Customer();
-            System.out.println("Write the customer name :" );
-            String customerName=sc.nextLine();
-            customer.setCustomerName(customerName);
+            while(true) {
+                try {
+                    //System.out.println("enter a number");
+                    System.out.println("Write customer Name :");
+                    customerName=sc.nextLine();
+                    if(customer.isFirstLetterUpperCase(customerName)){
+                        customer.setCustomerName(customerName);
+                        break;
+                    }
+                } catch (Exception e) {
+                    System.out.println("Invalid data!!!You have reenter a String.\n");
+                }
+            }
+            //System.out.println("Write the customer name :" );
+
+            //customer.setCustomerName(customerName);
 
             while(true) {
                 try {
@@ -89,4 +106,5 @@ public class Main {
         }
         readFile.saveFile();
     }
+
 }

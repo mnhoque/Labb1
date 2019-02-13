@@ -77,6 +77,18 @@ public class Customer implements Serializable {
         productCount++;
     }
 
+    public  boolean isFirstLetterUpperCase(String name) {
+
+        if (name == null || name.length() < 1)
+            return false;
+
+        if ( Character.isUpperCase(name.codePointAt(0))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public String toString()
     {
         String viewCustomer = new String("Name: " + customerName + "\nCustomer ID: "+customerId +"\nCustomer's address: "+ customerCity );
