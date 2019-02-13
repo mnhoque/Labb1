@@ -27,17 +27,7 @@ public class Customer implements Serializable {
         this.productsList = productsList;
     }
 
-    /*public ArrayList<CustomerBascket> getProductArrayList() {
-        return EachCustomerBasket;
-    }
 
-    public void setProductArrayList(ArrayList<CustomerBascket>EachCustomerBacket) {
-        this.EachCustomerBasket = EachCustomerBacket;
-    }*/
-    /*public void addInList(){
-        Product product=new Product("car",123456,123.45);
-        productArrayList.add(product);
-    }*/
 
     public String getCustomerCity() {
         return customerCity;
