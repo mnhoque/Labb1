@@ -63,6 +63,7 @@ public class Product  implements Serializable {
         eachproductCost=this.productPrice*this.quantuty;
         return eachproductCost;
     }
+
     public  boolean isFirstLetterUpperCase(String name) {
 
         if (name == null || name.length() < 1)
@@ -74,14 +75,14 @@ public class Product  implements Serializable {
             return false;
         }
     }
-    public static String firstLetterToUpperCase(String input) {
+    /*public static String firstLetterToUpperCase(String input) {
 
         String first = input.substring(0, 1).toUpperCase();
         //String rest = input.substring(1).toLowerCase();
 
         return first;
         //return first + rest;
-    }
+    }*/
     public String toString()
     {
         String viewProduct = new String("Product Name: " + productName + "\nProduct ID: "+productArticleNumber +"\nProduct price : "+ productPrice+"\nProduct total price : "+ productCost() );

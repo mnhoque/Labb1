@@ -30,5 +30,12 @@ class ProductTest {
         boolean result = product.isFirstLetterUpperCase("cookies");
         assertFalse(result);
     }
+    @Test
+    void checkProductCost(){
+        double eachProductPrice =product.productCost();
+        assertEquals(product.getQuantuty()*product.getProductPrice(),eachProductPrice
+        );
+
+    }
 
 }
