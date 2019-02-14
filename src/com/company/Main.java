@@ -26,22 +26,17 @@ public class Main {
             int productCountForEachCustomer=0;
             double totalPriceForEachCustomer=0;
             Customer customer= new Customer();
-            while(true) {
-                try {
-                    //System.out.println("enter a number");
-                    System.out.println("Write customer Name :");
-                    customerName=sc.nextLine();
-                    if(customer.isFirstLetterUpperCase(customerName)){
-                        customer.setCustomerName(customerName);
-                        break;
-                    }
-                } catch (Exception e) {
-                    System.out.println("Invalid data!!!You have reenter a String.\n");
-                }
-            }
+
+
+            System.out.println("Write customer Name :");
+            customerName=sc.nextLine();
+
+
+
+
             //System.out.println("Write the customer name :" );
 
-            //customer.setCustomerName(customerName);
+            customer.setCustomerName(customerName);
 
             while(true) {
                 try {
